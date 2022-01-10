@@ -1,0 +1,14 @@
+
+name: ws
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - opencv # -python
+  - matplotlib
+  - jupyter
+  - Pillow
+  #- tensorflow=2.5
+  #- tflite-support
+  - flatbuffers
