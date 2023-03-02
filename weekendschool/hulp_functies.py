@@ -6,6 +6,11 @@ from tflite_support import metadata_schema_py_generated as _metadata_fb
 from tflite_support import metadata as _metadata
 import flatbuffers
 
+try:
+    import matplotlib.pyplott as plt
+except ImportError as e:
+    pass
+
 
 def plot_model(model_details, filename=None):
 
@@ -37,7 +42,7 @@ def plot_model(model_details, filename=None):
     plt.show()
 
 
-   
+
 def plot_images(images, labels_true, class_names, labels_pred=None):
     assert len(images) == len(labels_true)
 
